@@ -14,29 +14,22 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition-duration:3s;
     
    
 }
 
-.ex-2-square:hover {
+.ex-2-square:active {
    
-    animation-name: ritangle;
-    animation-duration: 5s;
-    animation-iteration-count:5;
+    animation-name: rettangolo;
+    width: 150px;
+    height: 200px;
+   
 }
 
 
 
-@keyframes ritangle {
 
-
-    80%{
-        border-left: 100px solid white;
-        border-right: 100px solid white;
-        border-bottom: 200px solid red;
-    }
-    
-}
 .ex-2-square:hover{
     
     
@@ -95,8 +88,8 @@
     filter: grayscale(1) ;
 }
 .ex-7-img:hover{
-    transition: all 5s linear;
-    filter: opacity(1) blur(2px);
+    transition: all 3s linear;
+    filter: grayscale(1) blur(2px);
 }
 
 .ex-8-img:hover{
@@ -165,23 +158,23 @@
     line-height: 70px;
     text-align: center;
     text-decoration: none;
+    transition: all 3s linear;
 }
 
-.ex-12-button:hover{
-    background-color: blue;
-    color: white;
-}
-.ex-12-button:hover{
-    background-color: cornflowerblue;
 
-}
+
 .ex-12-button:hover .ex-12-top-white {
-    display: none;
+    position: absolute;
+    top: -10px;
+    left: 50%;
 }
 
 
 .ex-12-button:hover .ex-12-bottom-white {
-    display: none;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    
 }
 
 .ex-12-top-white, .ex-13-top-white {
